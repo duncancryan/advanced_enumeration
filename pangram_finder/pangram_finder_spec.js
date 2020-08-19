@@ -22,12 +22,12 @@ describe('PangramFinder', function () {
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
 
-  xit('should be able to detect a pangram with special characters', function () {
+  it('should be able to detect a pangram with special characters', function () {
     const pangramFinder = new PangramFinder('how_vexingly_quick_daft_zebras_jump!');
     assert.strictEqual(pangramFinder.isPangram(), true);
   });
 
-  xit('should be able to detect a non-pangram with special characters', function () {
+  it('should be able to detect a non-pangram with special characters', function () {
     const pangramFinder = new PangramFinder('look_just_clear_this_up:_is_this_a_pangram_or_not?!');
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
