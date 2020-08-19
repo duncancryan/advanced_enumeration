@@ -3,7 +3,11 @@ const IsogramFinder = function (word) {
 }
 
 IsogramFinder.prototype.isIsogram = function () {
-    const wordArray = this.word.split('');
+    const wordArrayUncased = this.word.split('');
+
+    const wordArray = wordArrayUncased.map((letter) => {
+      return letter.toLowerCase();
+    })
     return new Set(wordArray).size === wordArray.length;
 }
 
