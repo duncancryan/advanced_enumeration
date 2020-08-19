@@ -32,7 +32,7 @@ describe('PangramFinder', function () {
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
 
-  xit('should be able to handle an empty string', function () {
+  it('should be able to handle an empty string', function () {
     const pangramFinder = new PangramFinder('');
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
