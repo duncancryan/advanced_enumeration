@@ -14,7 +14,7 @@ AnagramFinder.prototype.findAnagrams = function (otherWords) {
     for (var word of otherWordsSplit) {
       if (word.every((letter) => {
         return this.wordArray.includes(letter)
-      })) {
+      }) && word.length === this.wordArray.length) {
         anagrams.push(word.join(''));
       }
     }
