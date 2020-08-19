@@ -12,12 +12,12 @@ describe('IsogramFinder', function () {
     assert.strictEqual(isogramFinder.isIsogram(), false);
   });
 
-  it('should be able to detect an isogram case insensitively', function () {
+  xit('should be able to detect an isogram case insensitively', function () {
     const isogramFinder = new IsogramFinder('Uncopyrightable');
     assert.strictEqual(isogramFinder.isIsogram(), true);
   });
 
-  it('should be able to detect a non-isogram case insensitively', function () {
+  xit('should be able to detect a non-isogram case insensitively', function () {
     const isogramFinder = new IsogramFinder('NotAnIsogram');
     assert.strictEqual(isogramFinder.isIsogram(), false);
   });
